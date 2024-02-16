@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="/css/experience.css">
     <link rel="stylesheet" href="/css/skills.css">
+    
   </head>
 
   <body>
@@ -161,6 +162,10 @@
       </section>
     </div>
 
+    <footer>
+      <a href="http://www.dio.mr/"></a>
+        <img src="img/icons/dio.svg" alt="DIO">
+    </footer>
     </main>
 
     <script src="js/acordeon.js"></script>
