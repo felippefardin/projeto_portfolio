@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/fonts/Neue-Machina-Regular.otf);
+  }
+
+body{
+    background-color: #000;
+    color: #fff;
+    margin: 1;
+}
+
+
+
+.main {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+}
+
+.main::before, 
+.main::after {
+    content: '';
+    background-image: url(/img/icons/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.main::after {
+    content: '';
+    top: auto; 
+    left: auto;   
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+
+    .main::after, 
+    .main::before {
+        width: 70vw;
+    }     
+    
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
